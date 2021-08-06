@@ -21,4 +21,5 @@ def colorize(mask_array, palette='cityscapes'):
 
 def blend(input_img, seg_img):
     """Blend an input image with its colorized segmentation labels."""
-    return Image.blend(input_img, seg_img, 0.4)
+    blending_img = Image.blend(input_img, seg_img, 0.4)
+    return blending_img
